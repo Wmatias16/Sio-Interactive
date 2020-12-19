@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SIO INTERACTIVE</title>
+</head>
+
+<body>
+    <div class="container-video">
+        <video id="myvideo" src="assets/video.mp4" loop>
+            Tu navegador no implementa el elemento <code>video</code>.
+        </video>
+
+        <div class="container-btn">
+            <button id="btn" onclick="left()"><i class="fa fa-angle-double-left"></i></button>
+            <button id="btn" onclick="play()"><i class="fa fa-play"></i></button>
+            <button id="btn" onclick="stop()"><i class="fa fa-stop"></i></button>
+            <button id="btn" onclick="right()"><i class="fa fa-angle-double-right"></i></button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
